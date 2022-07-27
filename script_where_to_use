@@ -1,0 +1,18 @@
+<!--The <script> Tag -->
+
+<!--In HTML, JavaScript code is inserted between <script> and </script> tags-->
+<Doctype html>
+<html>
+   <body>
+    <h1> FIRST JAVASCRIPT USAGE</h1>
+     <p id="demo"> </p>
+      <script>
+        document.getElementById('demo').inner.HTML="first usage";
+      </script> 
+    </body>
+</html>
+  
+  < !--  note:
+         in script tag we use semicolon at the end of the any javascript method
+         *** in ordinary method we use  double quotation -->
+    
