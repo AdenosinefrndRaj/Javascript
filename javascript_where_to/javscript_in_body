@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+        function myHead(){
+            document.getElementById('demo').innerHTML="Paragraph Changed";
+          }
+        </script>
+      <h2>javascript usage in body</h2>
+
+       <p id="demo">A Paragraph</p>
+
+        <button type="button" onclick="myHead()">touch this</button>
+
+</body>
+</html> 
+
+<!--
+    points to remember:
+     * semi colon in
+     
+     * writing procedure for function 
+     
+     * using proper quotations
+     
+     * Placing scripts at the bottom of the <body> element improves the display speed,
+       because script interpretation slows down the display
+     
+     * An interpreted language is a programming language which are generally interpreted, 
+       without compiling a program into machine instructions. It is one where the instructions are not directly
+       executed by the target machine, but instead read and executed by some other program.  
+     
+     * To make the computer understand, a program can be written using only 0s and 1s.
+       The data can also be specified and represented using only 0s and 1s. Such a program is called Machine Language program. 
+       Machine language was the first in the evolution of computer programming languages.
+-->
