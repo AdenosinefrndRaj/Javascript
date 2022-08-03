@@ -26,17 +26,18 @@ External JavaScript Advantages
 
 Placing scripts in external files has some advantages:
 
-    It separates HTML and code
-    It makes HTML and JavaScript easier to read and maintain
-    Cached JavaScript files can speed up page loads
+External scripts cannot contain <script> tags.
+
+
+External JavaScript Advantages
+les can speed up page loads
 
 To add several script files to one page  - use several script tags:
 Example
-<script src="myScript1.js"></script>
-<script src="myScript2.js"></script>
-External References
+External scripts cannot contain <script> tags.
 
-An external script can be referenced in 3 different ways:
+
+External JavaScript Advantages
 
     With a full URL (a full web address)
     With a file path (like /js/)
@@ -44,6 +45,11 @@ An external script can be referenced in 3 different ways:
 
 This example uses a full URL to link to myScript.js:
 Example
+External scripts cannot contain <script> tags.
+
+
+External JavaScript Advantages
+
 <script src="https://www.w3schools.com/js/myScript.js"></script>
 
 This example uses a file path to link to myScript.js:
@@ -55,3 +61,8 @@ Example
 <script src="myScript.js"></script>
 
 
+
+External scripts cannot contain <script> tags.
+
+
+External JavaScript Advantages
