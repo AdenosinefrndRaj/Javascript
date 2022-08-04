@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title> first js </title> 
+ </head>
+<body>
+ <form>
+   <input type="text" id="movie_name" placeholder="enter the number"/>
+   <input type="button" value="ADD" onclick="print_numbers()"/>
+ </form>
+   <h4 id="print">movie</h4>
+   <ul id="movie"></ul>
+  <script>
+      function print_numbers(){
+        var ul_tag= document.getElementById('movie');
+        var mv_name= document.getElementById('movie_name').value;
+        var txt = document.createTextNode(mv_name);
+        var li_tag = document.createElement('li');
+         li_tag.appendChild(txt);
+         ul_tag.appendChild(li_tag);
+          }
+       </script> 
+ </body>
+</html>

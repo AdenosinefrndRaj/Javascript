@@ -1,0 +1,12 @@
+<html>
+<body>
+  <h1 id='details'></h1>
+  </body>
+  <script>
+  var a='{"students":[{"firstname":"Raj","lastname":"V"}]}'
+  const b = JSON.parse(a);
+  b.students.firstname='Pazhani';
+  document.getElementById('details').innerHTML=b.students[0].firstname
+  + " " + b.students[0].lastname
+  </script> 
+</html>

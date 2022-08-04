@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title> first js </title> 
+ </head>
+<body>
+ <form>
+   <input type="number" id="num" placeholder="enter the number"/>
+   <input type="button" value="list" onclick="print_numbers()"/>
+ </form>
+   <h4 id="print"</h4>
+  <script>
+      function print_numbers(){
+        var num = document.getElementById('num').value;
+        num = Number(num);
+        var i=0;
+        for(i;i<num;i++)
+        {
+          if(i%2==0){
+               console.log(i);
+          }
+        }
+      }
+  </script> 
+ </body>
+</html>
