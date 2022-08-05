@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>external javascript</h2>
+
+       <p id="demo">It is done by creating external script file and it cannot contain script tag</p>
+       <p>This example links to "myScript.js".</p>
+       <p>(myFunction is stored in "myScript.js")</p>
+       
+       <button type="button" onclick="externalScript()">touch this</button>
+        
+        <script src="external.js"></script>
+
+    </body>
+</html> 
