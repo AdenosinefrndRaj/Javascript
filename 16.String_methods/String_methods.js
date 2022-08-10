@@ -1,5 +1,8 @@
+//ASCII (American Standard Code for Information Interchange) 
+//is the most common character encoding format for text data in computers and on the internet. 
+
 // if you print any sentence then print variable in console you put + in  console.log("Length" +c);
-let first_name = "VenkatJothi";
+let first_name = "VenkatVJothi";
 let last_name = "Raj";
 
 //Concatenation - joining two strings
@@ -8,15 +11,29 @@ let last_name = "Raj";
 //1.Manual concatenation 
 //let c = first_name+last_name;
 
-let c = first_name+" "+last_name;
-console.log(c);
+let c = first_name+" "
+//2.concat function
+c=first_name.concat(' ',last_name); //mistake i done i put +in last_name
+console.log("concat:"+c);
 
+//append
+
+c="Vj "; // note append means "c+" see the output like Vj Pazhani
+c+="Pazhani";
+
+console.log("Append :" +c);
 
 //2.concat function
 c=first_name.concat(' ',last_name); //mistake i done i put +in last_name
 console.log("concat:"+c);
 
 //append
+
+c="Vj "; // note append means "c+" see the output like Vj Pazhani
+c+="Pazhani";
+
+console.log("Append :" +c);
+
 
 c="Vj "; // note append means "c+" see the output like Vj Pazhani
 c+="Pazhani";
@@ -49,5 +66,65 @@ console.log("Lowercase " +c);
 
 //indexOf fuction
 
-c=first_name.indexOf('e'); //remember ()
-console.log("indexOf e " +c);
+c=first_name.indexOf('V'); //remember ()
+console.log("indexOf V : " +c);
+
+
+c=first_name.lastIndexOf('V');
+console.log("LastindexOf e : " +c);
+
+//charAt fuction
+
+c=first_name.charAt('5');
+console.log("charAt 5 is : " +c);
+
+//charcodeAt function it gives ASCII for given charector in position not a charector try it c=console.charcodeAt('V');
+
+c=first_name.charCodeAt('5');
+console.log("charcodeAt 5 is : " +c);
+
+//substr function
+
+c=first_name.substr(0,3); //the strike out represent the @deprecated — A legacy feature for browser compatibility
+console.log("substr : "+c);
+
+//Substring function
+
+let text = "013495234580";
+c=text.substring(0,4); // (method) String.substring(start: number, end?: number | undefined): string
+                       //Returns the substring at the specified location within a String object.
+console.log("substring : "+c);
+
+c=text.substring(4); 
+
+console.log("substring : "+c);
+
+c=text.substring(4,0); 
+
+console.log("substring : "+c);
+
+c=text.substring(40,30); 
+
+console.log("substring : "+c);
+
+
+//slice function
+
+c=text.slice(2,7);
+//it print index of element and taken as start number example (2,7) 2 is starting number index of 2 is 3
+//it print the until the position of element and taken as ending number 7 is position position of 7 is 2
+console.log("slice "+c);
+
+c=text.slice(7,1);
+console.log("slice "+c);
+
+c=text.slice(23,40);
+console.log("slice "+c);
+ 
+//negative indexing
+
+c=text.slice(-3);
+console.log("slice -3 "+c);
+
+
+
