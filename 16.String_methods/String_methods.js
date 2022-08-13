@@ -1,3 +1,4 @@
+//we add any statement in console then we put '+C'
 //ASCII (American Standard Code for Information Interchange) 
 //is the most common character encoding format for text data in computers and on the internet. 
 
@@ -29,6 +30,7 @@ console.log("concat:"+c);
 
 //append
 
+console.log("split :"+c);
 c="Vj "; // note append means "c+" see the output like Vj Pazhani
 c+="Pazhani";
 
@@ -38,6 +40,7 @@ console.log("Append :" +c);
 c="Vj "; // note append means "c+" see the output like Vj Pazhani
 c+="Pazhani";
 
+console.log("split :"+c);
 console.log("Append :" +c);
 
 //Escaping
@@ -48,11 +51,7 @@ console.log("Append :" +c);
 
 c='She can\'t run';
 //putting forward slash in single quote then it run browser console and javascript understand it's a charecter
-console.log(c);
-
-//length
-c=first_name.length;
-console.log("Length " +c);
+console.log(c);console.log("split :"+c);
 
 // it is case sensitive
 //toUppercase function
@@ -123,8 +122,91 @@ console.log("slice "+c);
  
 //negative indexing
 
-c=text.slice(-3);
-console.log("slice -3 "+c);
+console.log("charcodeAt 5 is : " +c);
+
+//split in js 
+
+let a="JS is a web programming";
+c=a.split(" ");
+console.log("split :"+c);
+console.table(c);
+
+
+//replace in js
+
+a="I am from villupuram";
+console.log("Before replace : "+a)
+c=a.replace('villupuram','kallakurichi');
+console.log("After replace : "+c);
+
+// includes in js
+
+const pets=['cat','dog','bat'];
+console.log(pets.includes('cat'));
+console.log(pets.includes('rat'));
+
+//trim in js - used to remove the unwanted white spaces 
+a=" joes ";
+console.log("Before trim : "+a.length);
+a=a.trim();
+console.log("After trim : "+a.length);
+
+//padstart , padEnd in js
+// note the value 4 should count 5 in it
+//see the console for better result
+a="5";
+a=a.padStart(4,0);
+console .log(a);
+
+a="5";
+a=a.padEnd(4,0);
+console .log(a);
+
+a="5";
+a=a.padStart(4,"$"); // try it by putting  symbol $ without quotation
+                     //always enter the symbol in quotation
+console .log(a);
+
+
+//long literals in javascript
+//method 1
+
+let longString="C programming language is a machine-independent programming language "+  " that is mainly used to create many types of applications" + " and operating systems such as Windows, and other " + "complicated programs such as the Oracle database, Git, Python interpreter," + "and games and is considered a programming foundation "
+
+console.log(longString);
+
+//method 2
+
+longString="C programming language is a machine-independent programming language \  that is mainly used to create many types of applications \ and operating systems such as Windows, and other \ complicated programs such as the Oracle database, Git, Python interpreter,\ and games and is considered a programming foundation "
+
+console.log(longString);
+
+//String.fromCharcode()
+
+console.log(String.fromCharCode(86, 87 , 88, 89));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
