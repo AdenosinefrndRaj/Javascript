@@ -151,6 +151,140 @@ console.log("Before splice : " +n4);
 n4.splice(2,0,100,200);
 
 console.log("After splice : " +n4);
+//---------------------------------------
+
+console.clear();
+
+//concat in javascript
+
+const a1=[10,12,22];
+const b1=[33,44,55];
+const c1=[66,77,88];
+
+let d=a1.concat(b1);
+
+console.log(d);
+
+
+ d=a1.concat(b1,c1);
+
+ console.log(d);
+
+ d=a1.concat(b1,c1,41,23,45);
+
+ console.log(d);
+
+ d=a1.concat(b1,c1,41,23,45,['28','38','49','58']);
+ 
+ console.log(d);
+
+ console.table(d);
+
+ //sort in javascript
+
+ const names=["Raj","arun","kane","virat"];
+
+ console.log("Before sort : "+names);
+
+ names.sort();
+
+ console.log("After sort : "+names);
+   //---------------------
+
+ const num=[10,100,23,80,980];
+
+ console.log("Before sort : "+num);
+
+
+ num.sort();
+ console.log("After sort : "+num);
+
+ num.sort((a,b)=>{
+  return a-b;     
+
+})
+console.log("ASCENDING sort : "+num);
+
+num.sort((a,b)=>{
+  return b-a;     
+
+})
+console.log("DSCENDIN sort : "+num);
+
+
+
+const user2=[
+    
+  {full_name:"Raj",city:"villupuram",age:"20"},
+  
+  {full_name:"chandru",city:"Madurai",age:"21"},
+
+  {full_name:"Root",city:"Ireland",age:"24"},
+
+  {full_name:"Roy",city:"England",age:"25"},
+];
+
+console.log(user2);
+
+console.table(user2);
+
+user2.sort((a,b)=>{
+  return a.age-b.age;
+
+});
+
+console.table(user2);
+
+user2.sort((a,b)=>{
+
+    if(a.full_name<b.full_name) return 1;
+    if(a.full_name>b.full_name) return -1;
+    return 0;
+
+});
+
+console.table(user2);
+
+console.clear();
+
+
+//Fill method in js array
+
+//Fill(value,start,end)
+
+let n=[1,2,3,4,5,6,7];
+
+console.log("Before Fill : "+n);
+
+//n.fill(20);
+console.log("After Fill : "+n);
+
+//n.fill("a");
+
+//console.log("Char Fill : "+n);
+
+//n.fill(30,3);
+
+//console.log(" where Start Fill : "+n);
+
+n.fill(20,3,5);
+
+console.log("start to end Fill : "+n);
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
 
 
 
